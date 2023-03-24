@@ -1,0 +1,126 @@
+body {
+    background: rgb(243, 248, 246);
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: .5px;
+}
+
+.card {
+    background-color: rgb(255, 194, 151);
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.card .actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;    
+}
+
+.card .actions button {
+    margin-left: 5px;
+}
+
+.feedback-form button:disabled {
+    opacity: .4;
+}
+
+.header {
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    padding: 16px 16px 10px;
+    border-bottom: 1px solid transparent;  
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover, a:focus, a:focus-visible {
+    border-bottom: 1px solid black;
+    outline: none;
+    background-color: rgb(233, 241, 238);
+}
+
+.active {
+    border-bottom: 1px solid black;
+    color: black;
+}
+
+.feedback-form {
+    padding: 30px 20px;
+    border-bottom: 1px solid black;
+}
+
+.submit-element {
+    position: relative;
+    box-sizing: border-box;
+    position: relative;
+}
+
+input {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    width: calc(100vw - 40px);
+    position: relative;
+    box-sizing: border-box;
+}
+
+.btn {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 6px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    position: absolute;
+    right: 6px;
+    bottom: 6px;
+}
+
+.rating-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.rating {
+    padding: 8px;
+    border: 1px solid black;
+    border-right: none;
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.rating-selected {
+    background-color: black;
+    color: white;
+}
+
+.rating:last-child {
+    border-right: 1px solid black;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 6px;
+    border-bottom: 1px black solid;
+}
+
